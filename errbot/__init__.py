@@ -398,7 +398,7 @@ def cmdfilter(*args, **kwargs):
 
     if len(args):
         return decorate(args[0], **kwargs)
-    return lambda func: decorate(func, **kwargs)
+    return lambda func: decorate(func)
 
 
 def botflow(*args, **kwargs):
@@ -414,4 +414,4 @@ def botflow(*args, **kwargs):
 
     if len(args):
         return decorate(args[0], **kwargs)
-    return lambda func: decorate(func, **kwargs)
+    return lambda func: decorate(func)
